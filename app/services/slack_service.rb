@@ -16,7 +16,7 @@ class SlackService
     message = "New feedback was submitted about #{subject}. <#{current_domain}|Click here> to view it."
     body = { "text": message }.to_json
     params = { body: body, headers: { "Content-Type" => "application/json" } }
-    http_service.post(ENV["SLACK_WEBHOOK_URL"], params)
+    http_service.post(webhook_url, params)
     # TODO: log slack webhook errors in Sentry
   end
 end
