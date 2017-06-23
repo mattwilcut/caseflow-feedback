@@ -7,6 +7,7 @@
 // The application name as defined in appeals-deployment aws-config.yml
 def APP_NAME = 'feedback';
 
+// This is purely for testing
 // The application version to checkout.
 // See http://docs.ansible.com/ansible/git_module.html version field
 def APP_VERSION = 'HEAD'
